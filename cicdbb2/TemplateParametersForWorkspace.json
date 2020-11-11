@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "cicdbb2"
+		},
+		"cicdbb2-WorkspaceDefaultSqlServer_connectionString": {
+			"value": ""
+		},
+		"cicdbb2-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://cicdbb2.dfs.core.windows.net"
+		}
+	}
+}
