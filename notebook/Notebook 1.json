@@ -3,11 +3,15 @@
 	"properties": {
 		"nbformat": 4,
 		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "test1",
+			"type": "BigDataPoolReference"
+		},
 		"sessionProperties": {
-			"driverMemory": "28g",
-			"driverCores": 4,
-			"executorMemory": "28g",
-			"executorCores": 4,
+			"driverMemory": "56g",
+			"driverCores": 8,
+			"executorMemory": "56g",
+			"executorCores": 8,
 			"numExecutors": 2,
 			"conf": {
 				"spark.dynamicAllocation.enabled": "false",
@@ -16,8 +20,27 @@
 			}
 		},
 		"metadata": {
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
 			"language_info": {
 				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/00baffc3-c40a-4478-a424-4bdc9566c82a/resourceGroups/cicd-rg/providers/Microsoft.Synapse/workspaces/cicdbb2/bigDataPools/test1",
+				"name": "test1",
+				"type": "Spark",
+				"endpoint": "https://cicdbb2.dev.azuresynapse-dogfood.net/livyApi/versions/2019-11-01-preview/sparkPools/test1",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 10,
+				"cores": 8,
+				"memory": 56,
+				"automaticScaleJobs": false
 			},
 			"sessionKeepAliveTimeout": 30
 		},
@@ -27,7 +50,7 @@
 				"source": [
 					"1+1"
 				],
-				"execution_count": null
+				"execution_count": 1
 			}
 		]
 	}
